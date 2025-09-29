@@ -1,34 +1,23 @@
 ## 1) InfluxDB Data Exporter (influxdb2_dumper.py)
 
-Dumps time-series data from an InfluxDB 2.x instance into CSV files. Supports vacuum gauges, temperature sensors, pressure readings, and density values, each exported into a separate CSV.
+Dumps **time-series** data from an InfluxDB 2.x instance into **CSV files**. Supports vacuum gauges, temperature sensors, pressure readings, and density values, each exported into a **separate** CSV.
 
 **Inputs**
-
 Command-line arguments for time range:
-
 --timelength (default 1h; supports h, d, m).
-
 --endtime (default now()).
-
 --start / --end (ISO8601 strings, override above).
 
 **Outputs**
-
 - report_csv/vacuum.csv — selected vacuum gauge devices.
-
 - report_csv/temperature.csv — selected coldhead sensors.
-
 - report_csv/pressure.csv — scalar pressure values.
-
 - report_csv/density.csv — numeric density and species label.
 
 **Usage**
-
 -Run with desired time arguments (e.g. python influxdb2_dumper.py --timelength 2d, 
  python influxdb2_dumper.py --start 2025-09-01T00:00:00Z --end 2025-09-01T12:00:00Z).
-
 -Script connects to InfluxDB, queries each measurement, and writes aligned CSV files.
-
 -Vacuum/temperature exports are keyed by device; pressure/density by value and field.
 
 ---
