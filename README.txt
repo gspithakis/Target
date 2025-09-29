@@ -14,17 +14,18 @@ Command-line arguments for time range:
 
 **Outputs**
 
--report_csv/vacuum.csv — selected vacuum gauge devices.
+- report_csv/vacuum.csv — selected vacuum gauge devices.
 
--report_csv/temperature.csv — selected coldhead sensors.
+- report_csv/temperature.csv — selected coldhead sensors.
 
--report_csv/pressure.csv — scalar pressure values.
+- report_csv/pressure.csv — scalar pressure values.
 
--report_csv/density.csv — numeric density and species label.
+- report_csv/density.csv — numeric density and species label.
 
 **Usage**
 
--Run with desired time arguments (e.g. python influxdb2_dumper.py --timelength 2d, python influxdb2_dumper.py --start 2025-09-01T00:00:00Z --end 2025-09-01T12:00:00Z).
+-Run with desired time arguments (e.g. python influxdb2_dumper.py --timelength 2d, 
+ python influxdb2_dumper.py --start 2025-09-01T00:00:00Z --end 2025-09-01T12:00:00Z).
 
 -Script connects to InfluxDB, queries each measurement, and writes aligned CSV files.
 
@@ -79,8 +80,7 @@ Solves for the **nozzle diameter `d₀`** (in **μm**) for up to four different 
 
 ## Notes
 
-- **Units matter:**  
-  - `skimmers.py` displays results in mm.  
+- `skimmers.py` displays results in mm.  
   - `expected_delta_p.py` expects `d0` in μm; outputs Δp in mbar.  
   - `nozzle_diameter.py` expects `Δp` in mbar and `p₀` in bar; outputs `d₀` in μm.
   - `expected_delta_p.py` and `nozzle_diameter.py` accept expressions (e.g., `2e-3`, `pi/4`).
