@@ -70,7 +70,6 @@ Solves for the **nozzle diameter `d₀`** (in **μm**) for up to four different 
 ## Notes
 
 - `skimmers.py` displays results in mm.  
-  - `expected_delta_p.py` expects `d0` in μm; outputs Δp in mbar.  
-  - `nozzle_diameter.py` expects `Δp` in mbar and `p₀` in bar; outputs `d₀` in μm.
-  - `expected_delta_p.py` and `nozzle_diameter.py` accept expressions (e.g., `2e-3`, `pi/4`).
-
+- `expected_delta_p.py` expects `d0` in μm; outputs Δp in mbar.  
+- `nozzle_diameter.py` expects `Δp` in mbar and `p₀` in bar; outputs `d₀` in μm.
+- `expected_delta_p.py` and `nozzle_diameter.py` accept expressions (e.g., `2e-3`, `pi/4`).
