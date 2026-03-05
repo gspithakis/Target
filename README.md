@@ -4,7 +4,7 @@
 
 A collection of **Python utilities used in experimental physics workflows**, including:
 
-- Time-series **data export from InfluxDB**
+- **Time-series data export from InfluxDB**
 - **Vacuum system calculations**
 - **Beamline / skimmer geometry tools**
 
@@ -248,3 +248,4 @@ sympy
 tkinter
 influxdb-client
 ```
+
