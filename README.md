@@ -34,7 +34,7 @@ It exports **time-series data from an InfluxDB 2.x instance** into structured **
 - Python analysis
 - MATLAB processing
 - Excel inspection
-- long-term archiving
+- Long-term archiving
 
 Each measurement type is exported into a **separate CSV file**.
 
@@ -248,4 +248,5 @@ sympy
 tkinter
 influxdb-client
 ```
+
 
