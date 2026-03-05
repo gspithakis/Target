@@ -1,8 +1,6 @@
 # Experimental Utilities Toolkit
 
 ![Python](https://img.shields.io/badge/python-3.x-blue)
-![Status](https://img.shields.io/badge/status-active-success)
-![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 A collection of **Python utilities used in experimental physics workflows**, including:
 
@@ -18,14 +16,14 @@ These scripts were developed to support **laboratory data analysis and vacuum sy
 
 | Script | Purpose | Interface |
 |------|------|------|
-| ⭐ **`influxdb2_dumper.py`** | Export time-series data from InfluxDB to CSV reports | CLI |
+| **`influxdb2_dumper.py`** | Export time-series data from InfluxDB to CSV reports | CLI |
 | `skimmers.py` | Solve skimmer geometry parameters | GUI |
 | `expected_delta_p.py` | Compute expected pressure rise Δp | GUI |
 | `nozzle_diameter.py` | Solve for nozzle diameter | GUI |
 
 ---
 
-# ⭐ Main Utility: InfluxDB Data Exporter
+# Main Utility: InfluxDB Data Exporter
 
 ## `influxdb2_dumper.py`
 
@@ -250,15 +248,3 @@ sympy
 tkinter
 influxdb-client
 ```
-
-Install with:
-
-```bash
-pip install sympy influxdb-client
-```
-
----
-
-# Author
-
-Utility scripts developed for **experimental physics and vacuum system analysis workflows**.
